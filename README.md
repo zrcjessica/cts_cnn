@@ -21,12 +21,11 @@ Prediction for cell types together, including Endothelial, Astrocytes, OPC, InhN
 
 #### Data
 Merged count data w/ 25~50cut
-> /iblm/netapp/home/sherryh/new_data/data_concat_25_50/
+> /iblm/netapp/home/sherryh/binary_data/50cut
+> /iblm/netapp/home/sherryh/binary_data/25cut
 
 Generated from MACS2
-> /iblm/netapp/home/sherryh/new_data/new_labels/
-
-Files: c5c2neg.npz, c6neg.npz, merge_c2_neg.npz
+> /iblm/netapp/home/sherryh/binary_data/MACS2
 
 #### Training/Testing
 > Multi_cell.ipynb
