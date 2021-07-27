@@ -1,4 +1,6 @@
 # Chromatin Accessibility Prediction for ATAC-Seq Data with CNN
+## Required Packages 
+Numpy, PyTorch, Sklearn, Scipy, random, seaborn, matplotlib, Math, os
 ## Binary Classification
 ### Individual Cell Type
 Prediction for each cell type spearately
@@ -33,3 +35,35 @@ Generated from MACS2
 
 Note: <br>
 Run all cells and select model of choice, **CNN** works the best. 
+
+## Quantitative Prediction
+### Individual Cell Type
+Prediction for each cell type spearately
+#### Data
+Processed count data 
+> /iblm/netapp/home/sherryh/new_data/zscore/
+> 
+> /iblm/netapp/home/sherryh/new_data/zscore_125/
+> 
+> /iblm/netapp/home/sherryh/new_data/zscore_500/
+
+Or generated from
+> /iblm/netapp/home/jezhou/make_cnn_training_data/out/pseudobulk
+
+#### Training/Testing
+> single_cell_continuous.ipynb
+
+Note: <br>
+There are six available models, but only **CNN** is maintained with different datasets. <br>
+
+### Jointly for Eight Cell Type
+Prediction for cell types together, including Endothelial, Astrocytes, OPC, InhNeuron, ExNeuron, Microglia, Oligodendrocytes, Sst+.
+
+#### Data
+> /iblm/netapp/home/sherryh/new_data/zscore/merged_80000_rand.npz
+
+#### Training/Testing
+> multi_quant.ipynb
+
+Note: <br>
+Not recommend for quantitative prediction as it yields much worse results than training inidividually
