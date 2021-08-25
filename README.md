@@ -54,7 +54,7 @@ Or generated from
 > single_cell_continuous.ipynb
 
 Note: <br>
-There are six available models, but only **CNN** is maintained with different datasets. <br>
+There are seven available models, but only **CNN** is constructed to handle different datasets. Need to manually change feed forward layer size for other models.<br>
 
 ### Jointly for Eight Cell Type
 Prediction for cell types together, including Endothelial, Astrocytes, OPC, InhNeuron, ExNeuron, Microglia, Oligodendrocytes, Sst+.
@@ -67,3 +67,12 @@ Prediction for cell types together, including Endothelial, Astrocytes, OPC, InhN
 
 Note: <br>
 Not recommend for quantitative prediction as it yields much worse results than training inidividually
+
+## Expression Prediction
+### Individual Cell Type
+Prediction for each cell type spearately
+#### Data
+Single Cell Data
+> /iblm/netapp/home/sherryh/expression/full_dataset
+GTEX data
+> /iblm/netapp/home/sherryh/expression/gtex
